@@ -2,7 +2,7 @@ import scipy.stats as s
 import matplotlib.pyplot as plt
 import numpy as np
 
-wei = s.weibull_min(2, 0, 2) # shape, loc, scale - creates weibull object
+wei = s.weibull_min(2, 0, 2)
 sample = wei.rvs(1000)
 shape, loc, scale = s.weibull_min.fit(sample, floc=0)
 
